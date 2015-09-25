@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'pages#home'
-  get 'age', to: 'pages#age'
+  post 'stringify', to: "pages#stringify", as:'stringify'
+  put 'age', to: "pages#person", as:'age'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
